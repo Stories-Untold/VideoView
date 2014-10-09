@@ -1,12 +1,164 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/paper_top"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"/>
 
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_alignBottom="@id/paper_top"
+        android:background="#33000000"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/imageDesc"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:id="@+id/point_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/level1"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/level1"
+        android:layout_width="100dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/home"
+            android:layout_centerInParent="true"
+            android:background="@drawable/icon_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/level2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/level2"
+        android:layout_width="180dp"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_margin="10dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/icon_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/menu"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/myyouku"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/icon_myyouku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/level3"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/level3"
+        android:layout_width="280dp"
+        android:layout_height="140dp">
+
+        <ImageView
+            android:id="@+id/channel1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/channel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/channel2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignLeft="@id/channel1"
+            android:layout_above="@id/channel1"
+            android:src="@drawable/channel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginLeft="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignLeft="@id/channel2"
+            android:layout_above="@id/channel2"
+            android:src="@drawable/channel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/channel4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/channel7"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/channel7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_alignRight="@id/channel7"
+            android:layout_alignParentRight="true"
+            android:id="@+id/channel6"
+            android:layout_above="@id/channel7"
+            android:src="@drawable/channel6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginRight="65dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignRight="@id/channel6"
+            android:layout_alignParentRight="true"
+            android:id="@+id/channel5"
+            android:layout_above="@id/channel6"
+            android:src="@drawable/channel5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
 </RelativeLayout>
